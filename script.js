@@ -35,3 +35,23 @@ fetch('https://script.google.com/macros/s/AKfycbzIE1MsrIoT2ecGRKlODsuIxuadFyA9pO
     .catch(error => alert('Error: ' + error));
 });
 
+//Back to Top Button
+
+  const backToTop = document.getElementById("back-to-top");
+
+  // Show button when scrolling down 100px
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+
+  // Scroll to top when clicked
+  backToTop.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
