@@ -1,0 +1,51 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #f7f4ef;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+h1.title {
+  font-family: 'Playfair Display';
+  margin-top: 75px;
+}
+
+h4.author {
+  font-size: 2.5em;
+  font-family: 'Bonheur Royale', serif;
+}
+
+.report-container {
+  margin: 60px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px 50px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  max-width: 1500px;
+}
+
+h2 {
+  font-family: 'Bonheur Royale', serif;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+h1, h3 {
+  font-family: 'Playfair Display';
+}
+
