@@ -43,7 +43,7 @@ nav {
   top: 0;
   width: 100%;
   background-color: #1a1a1a;
-  padding: 15px 10px;
+  padding: 20px 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   z-index: 1000;
   display: flex;
@@ -107,7 +107,8 @@ nav a:hover {
 h2 {
   font-family: Playfair, serif;
   font-size: 2.2rem;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-left: 50px;
 }
 
 h2::after {
@@ -176,11 +177,7 @@ h4 {
 
 /* Grid outline for both WORK/STUDY and PROJECTS */
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
+
 
 .portfolio-item p {
   font-size: 14px;
@@ -195,11 +192,17 @@ h4 {
 
 /* Projects */
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
 .project-item {
   background: #f7f4ef;
   padding: 12px 20px;
   box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.05);
-  height: fit-content;
+  min-height: 80%;
 }
 
 .project-item img {
