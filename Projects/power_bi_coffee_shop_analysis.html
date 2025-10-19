@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sales Analysis of a Coffee Shop with Power BI</title>
+  <link rel="stylesheet" type="text/css" href="pstyle.css">
+</head>
+<body>
+<a href="../index.html" class="back-button">← Back to Portfolio</a>
+<div class="title_container">
+  <h1 class="title">Sales Analysis of a Coffee Shop with Power BI</h1>
+  <h2 class="name">Reina Kaino</h2>
+</div>
+
+<div class="report-container">
+  <h2>Project Overview</h2>
+  <p>This dataset was taken from Maven Analytics website. </p>
+  <img src="./Images/coffee_shop_data.png" alt="coffee shop data">
+  <h3>Power Query</h3>
+  <p>The initial data cleaning process was done in Power Query. Data type of transaction_time was changed to "Time" and an extra column to calculate the total
+    price was created by multiplying quantity and unit_price. The cleaned dataset contains 149,117 rows and 12 columns.</p>
+  <h3>DAX measures</h3>
+  <p>A new table was created called DateTable. This included five columns:</p>
+  <ul>
+    <li><strong>Date:</strong> DateTable = CALENDAR(MIN(coffee_shop[transaction_date]), MAX(coffee_shop[transaction_date]))</li>
+    <li><strong>Year</strong> = YEAR(DateTable[Date])</li>
+    <li><strong>Month Number</strong> = MONTH(DateTable[Date])</li>
+    <li><strong>Month Name</strong> = FORMAT(DateTable[Date], "MMMM")</li>
+    <li><strong>YearMonth</strong> = FORMAT(DateTable[Date], "YYYY-MM")</li>
+  </ul>
+  <img src="./Images/coffee_shop_dateTable.png" alt="coffee shop date table">
+  <p>Another three columns were also added to the existing Coffee Shop dataset.</p>
+  <ul>
+    <li><strong>HourOfDay</strong> = HOUR(coffee_shop[transaction_time])</li>
+    <li><strong>DayOfWeek</strong> = FORMAT(coffee_shop[transaction_date], "dddd")</li>
+    <li><strong>DayOfWeekNumber</strong> = WEEKDAY(coffee_shop[transaction_date], 2)</li>
+  </ul></br>
+  <p>These DAX measures were created to transform the transaction dates and times into meaningful time dimensions,
+    which were then used to build the summary visualisations in the dashboard.</p>
+
+    <h2 class="with_space">Sales Overview- Page One</h2>
+    <p>This Power BI dashboard presents a dynamic overview of sales performance for a coffee shop chain over six months.
+        The goal of this report was to provide clear, data-driven insights into overall revenue trends,
+        product performance, and customer purchasing patterns.</p>
+        <img src="./Images/coffee_shop_page_one.png" alt="coffee shop page one">
+    <h3>Key Metrics and Insights</h3>
+        <ul>
+            <li><strong>Transactions:</strong> 14,912,000 individual transactions, representing 214K total items sold.</li>
+            <li><strong>Sales Trend:</strong> The line and area chart shows a strong upward trend in sales — starting at 17K in January and reaching 35K in June, indicating consistent growth and possibly successful seasonal promotions.</li>
+            <li><strong>Location Performance:</strong> The bar chart compares total sales across three branches — Hell’s Kitchen and Astoria lead with 51K sales each, while Lower Manhattan follows closely with 48K.</li>
+            <li><strong>Category Analysis:</strong> The bar chart shows Coffee generated the highest sales as well as the donut chart revealing that Coffee accounts for 41.6% of total items sold, highlighting it as the dominant revenue driver.</li>
+        </ul>
+    <h3>Interactivity and Design</h3>
+    <ul>
+        <li><strong>Month Filter:</strong> Allows users to explore sales trends by specific months to identify seasonal patterns or promotional impacts.</li>
+        <li><strong>Clean, Neutral Theme:</strong> The dashboard uses warm beige and brown tones to align with the coffee-shop aesthetic.</li>
+        <li><strong>User-Friendly Layout:</strong> Key metrics are displayed prominently at the top, with supporting visuals arranged logically for a quick, intuitive analysis experience.</li>
+    </ul>
+
+    <h2 class="with_space">Product Performance - Page Two</h2>
+    <p>Page two focuses on analyzing product-level performance across different categories, locations, and time periods.
+        The dashboard provides a detailed view of sales distribution, unit pricing, and customer purchasing patterns, 
+        helping the coffee shop identify its most profitable and popular products.</p></br>
+        <p>Interactive slicers for Category and Month allow users to dynamically filter data and uncover trends by specific product category or time frames.</p>
+        <img src="./Images/coffee_shop_page_two.png" alt="coffee shop page two">
+    <h3>Key Metrics and Insights</h3>
+    <ul>
+        <li><strong>Total Sales:</strong> $698.81K generated across all product categories.</li>
+        <li><strong>Total Quantity Sold:</strong> 214,470 items, covering beverages and related products such as tea, coffee beans, and bakery items.</li>
+        <li><strong>Sales by Product Category:</strong>Coffee leads with $269.95K (38.63%), followed by Tea ($196.41K, 28.11%) and Bakery products ($82.4K, 11.8%), as shown in the pie chart.</li>
+        <li><strong>Top-selling products:</strong> Top-selling products include Earl Grey Tea, Dark Chocolate Hot Chocolate, and Latte, each contributing over 4,500 units sold.</li>
+        <li><strong>Sales by Month and Location:</strong>All three store locations — Astoria, Hell’s Kitchen, and Lower Manhattan — show a consistent upward sales trend, peaking around June 2023.</li>
+        <li><strong>Sales by Hour of Day:</strong>Transaction quantities peak between 8–10 AM, indicating strong morning demand, particularly for coffee-based beverages and bakery items.</li>
+    </ul>
+    <h3>Interactivity and Design</h3>
+    <ul>
+        <li><strong>Intuitive Layout: </strong>Tables and charts are grouped logically — from pricing and quantity metrics to temporal and categorical trends.</li>
+        <li><strong>Interactive Exploration:</strong>Filters and drilldowns enable users to focus on specific categories or products with ease.</li>
+    </ul>
+
+    <h2 class="with_space">Store Performance - Page Three</h2>
+    <p>The last page visualises sales performance across the three stores, helping management identify top-performing stores, sales performance by hour and transaction efficiency.</p>
+    <img src="./Images/coffee_shop_page_three.png" alt="coffee shop page three">
+    <h3>Key Metrics and Insights</h3>
+    <ul>
+        <li><strong>Total Sales Overview:</strong>The company achieved a total of $698.81K in sales across all stores, with relatively even performance among the three locations.</li>
+        <li><strong>Hourly Sales Trends:</strong>Sales peak between 9 AM and 1 PM, showing that most customer activity happens in the late morning. After 2 PM, sales drop significantly, suggesting an opportunity to optimize staffing or promotions during slower hours.</li>
+        <li><strong>Average Transaction Value:</strong>The highest average transaction value was at Lower Manhattan ($4.81), followed by Hell’s Kitchen ($4.66) and Astoria ($4.59).
+This suggests that although Hell’s Kitchen sells more overall, customers at Lower Manhattan spend slightly more per transaction.</li>
+<h3>Interactivity and Design</h3>
+        <li><strong>Slicers:</strong>Used slicers for store location filtering.</li>
+        <li><strong>Conditional Formatting:</strong>Applied conditional formatting in the heatmap to highlight sales peaks by hour.</li>
+    </ul>
+</div>
+
+<button id="back-to-top" title="Go to top">⬆</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const backToTop = document.getElementById("back-to-top");
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+  backToTop.addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+</script>
+</body>
+
+
+</html>
