@@ -2,7 +2,9 @@
 
 ## 🌟 My Portfolio
 
-Welcome to my personal portfolio! Here you can explore my projects, skills, and learn a bit about my journey from pharmacy, IT support to data science and web development.
+Welcome to my personal portfolio! Here you can explore my projects, skills, and learn a bit about my journey from pharmacy, IT support to data science and web development. 
+
+Follow this link to view my page: https://reijkg2904.github.io/portfolio/
 
 ---
 
