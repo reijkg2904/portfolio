@@ -19,7 +19,7 @@ Here are some of my highlighted projects:
 - **Description:** Using R's Diamonds dataset, I performed data visualization and built models to predict diamond prices. Evaluated performance using Linear Regression and Random Forest models.
 - **Link:** [View Project](projects/diamonds_portfolio.html)
 
----
+More projects updated on the webpage
 
 ## Skills
 
@@ -27,19 +27,13 @@ Here are some of my highlighted projects:
 - **Data Science:** Regression Analysis, Forecasting, Machine Learning, Data Visualization
 - **Web Development:** Responsive Design, Portfolio Sites, Interactive Elements
 
----
-
 ## 🔗 Connect With Me
 
 - [LinkedIn](https://www.linkedin.com/in/reijkg2904/)
 - [GitHub](https://github.com/reijkg2904)
 - [Email](mailto:reinasdatastudio@gmail.com)
 
----
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
