@@ -1,20 +1,16 @@
 # portfolio
 
-## 🌟 My Portfolio
+## My Portfolio
 
 Welcome to my personal portfolio! Here you can explore my projects, skills, and learn a bit about my journey from pharmacy, IT support to data science and web development. 
 
 Follow this link to view my page: https://reijkg2904.github.io/portfolio/
 
----
+## About Me
 
-## 💻 About Me
+I’m Reina, a data scientist passinate about R and its ever-evolving statistical capabilities. My work combines programming, statistics, and visualization to solve real-world problems.
 
-I’m Reina, a passionate data scientist who loves turning data into insights and creating interactive web experiences. My work combines programming, statistics, and visualization to solve real-world problems.
-
----
-
-## 📂 Projects
+## Projects
 
 Here are some of my highlighted projects:
 
@@ -25,7 +21,7 @@ Here are some of my highlighted projects:
 
 ---
 
-## 🌐 Skills
+## Skills
 
 - **Programming Languages:** R, Python, Java, HTML, CSS, JavaScript
 - **Data Science:** Regression Analysis, Forecasting, Machine Learning, Data Visualization
@@ -37,7 +33,7 @@ Here are some of my highlighted projects:
 
 - [LinkedIn](https://www.linkedin.com/in/reijkg2904/)
 - [GitHub](https://github.com/reijkg2904)
-- [Email](mailto:r.eina.kaino@gmail.com)
+- [Email](mailto:reinasdatastudio@gmail.com)
 
 ---
 
